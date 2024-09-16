@@ -21,11 +21,6 @@ class Storage:
 
 	def save_task(self, task):
 		self.tasks.append(task)
-		
-	# def save_tasks(self):
-	# 	#tasks_as_dicts = [task.__dict__ for task in self.tasks]
-	# 	with open(self.tasksFileName, 'w') as file:
-	# 		json.dump([task.to_dict() for task in self.tasks], file, indent=4)
 
 	def update_task(self, updated_task):
 		for i, task in enumerate(self.tasks):
